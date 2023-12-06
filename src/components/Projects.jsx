@@ -1,6 +1,7 @@
 import React from "react";
 import LineGradient from "./LineGradient";
 import { motion } from "framer-motion";
+import { projectsData } from "../data";
 
 const container = {
   hidden: {},
@@ -16,20 +17,19 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, subtitle }) => {
+const Project = ({ data, subtitle }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-1000
     bg-grey z-30 flex flex-col justify-center items-center text-center p-4 text-deep-blue rounded-md`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-lg font-playfair">{title}</p>
+        <p className="text-lg font-playfair">{data.title}</p>
         <p className="mt-2 text-sm">{subtitle}</p>
       </div>
       <img
-        src={`/src/assets/img/${projectTitle}.png`}
-        alt={projectTitle}
+        src={data.image}
+        alt={`${data.name} Image`}
         className="w-full h-40 md:h-96 rounded-md " // consider md:object-cover that use or not
       />
     </motion.div>
@@ -98,11 +98,10 @@ const Projects = () => {
           >
             React
           </div>
-          <Project title="GrubFoods" subtitle="#React" />
-          <Project title="Quick Quiz" subtitle="#React" />
+          <Project data={projectsData[0]} subtitle="#React" />
+          <Project data={projectsData[1]} subtitle="#React" />
 
           {/* ROW 2 */}
-          <Project title="Investment Calulator" subtitle="#React" />
           <div
             className="flex justify-center text-center items-center p-4 bg-blue
             text-3xl text-hedvig-letter font-playfair font-semibold  text-black
@@ -115,7 +114,9 @@ const Projects = () => {
             User
           </div>          
           
-          <Project title="SE Webpage" subtitle="#Python #Javascript #HTML #CSS" />
+          <Project data={projectsData[2]} subtitle="#Python #Javascript #HTML #CSS" />
+          <Project data={projectsData[3]} subtitle="#Python #Javascript #HTML #CSS" />
+
 
 
           {/* ROW 3 */}
@@ -130,8 +131,8 @@ const Projects = () => {
           >
             Game
           </div>
-          <Project title="Toho game" subtitle="#Assembly #C++ #C #SFML" />
-          <Project title="python game" subtitle="#python" />
+          <Project data={projectsData[5]} subtitle="#Assembly #C++ #C #SFML" />
+          <Project data={projectsData[4]} subtitle="#python" />
         </motion.div>
       </div>
     </section>
