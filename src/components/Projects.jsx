@@ -61,21 +61,17 @@ const Projects = () => {
         </div>
 
         <div className="py-4">
-
-       
-        <p className="mt-5 text-black ">
-          View more details on my{" "}
-          <a
-            href="https://github.com/MattTeerapatt"
-            className="text-sm md:text-base text-yellow-800 hover:scale-110 transition duration-1000 bold hover:text-orange-600"
-          >
-            Github
-          </a>
-        </p>
+          <p className="mt-5 text-black ">
+            View more details on my{" "}
+            <a
+              href="https://github.com/MattTeerapatt"
+              className="text-sm md:text-base text-yellow-800 hover:scale-110 transition duration-1000 bold hover:text-orange-600"
+            >
+              Github
+            </a>
+          </p>
         </div>
       </motion.div>
-
-      
 
       {/* PROJECTS */}
       <div className="flex justify-center transition duration-1000 pt-4">
@@ -94,7 +90,6 @@ const Projects = () => {
             bg-gradient-to-r from-yellow-400 to-orange-300
 
               "
-              
           >
             React
           </div>
@@ -102,6 +97,13 @@ const Projects = () => {
           <Project data={projectsData[1]} subtitle="#React" />
 
           {/* ROW 2 */}
+
+            <Project
+            data={projectsData[3]}
+            subtitle="#React"
+          />
+
+
           <div
             className="flex justify-center text-center items-center p-4 bg-blue
             text-3xl text-hedvig-letter font-playfair font-semibold  text-black
@@ -109,15 +111,15 @@ const Projects = () => {
             bg-gradient-to-r from-yellow-400 to-orange-300
 
             "
-            
           >
             User
-          </div>          
-          
-          <Project data={projectsData[2]} subtitle="#Python #Javascript #HTML #CSS" />
-          <Project data={projectsData[3]} subtitle="#Python #Javascript #HTML #CSS" />
+          </div>
+          <Project data={projectsData[4]} subtitle="#Python #Javascript #HTML #CSS" />
 
 
+        
+
+        
 
           {/* ROW 3 */}
           <div
@@ -127,12 +129,15 @@ const Projects = () => {
             bg-gradient-to-r from-yellow-400 to-orange-300
 
             "
-            
           >
             Game
           </div>
           <Project data={projectsData[5]} subtitle="#Assembly #C++ #C #SFML" />
-          <Project data={projectsData[4]} subtitle="#python" />
+
+          <Project
+            data={projectsData[2]}
+            subtitle="#Python "
+          />
         </motion.div>
       </div>
     </section>
