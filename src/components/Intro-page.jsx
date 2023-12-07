@@ -15,17 +15,18 @@ const Landing = ({ setselectedPage }) => {
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
           <div className="transition duration-500">
-            <img
+            {/* <img
               alt="profile"
               src="https://avatars.githubusercontent.com/u/77468756?v=4"
               className="hover:filter hover:saturate-200 transition  animate-fade-down
               duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-            />
+            /> */}
           </div>
         ) : (
           <img
-            alt="profile"
-            src="https://avatars.githubusercontent.com/u/77468756?v=4"
+            // alt="profile"
+            // src="https://avatars.githubusercontent.com/u/77468756?v=4"
+            src=""
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full 
                 max-w-[400px] md:max-w-[600px]"
           />

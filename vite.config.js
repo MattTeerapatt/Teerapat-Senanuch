@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/Teerapat-Senanuch/',
   plugins: [react()],
-  assetsInclude: ['**/*.mov', '**/*.mp4, **/*.png, **/*.jpg, **/*.jpeg, **/*.gif, **/*.svg'],
+  assetsInclude: ['**/*.mov', '**/*.mp4, **/*.png, **/*.jpg, **/*.jpeg, **/*.JPG , **/*.gif, **/*.svg'],
 })

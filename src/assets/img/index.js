@@ -5,6 +5,9 @@ import quickquiz from "./quickquiz.png";
 import sewebpage from "./sewebpage.png";
 import Tohogame from "./Tohogame.png";
 
+import matt2 from "./matt2.png"
+
+
 export {
   GrubFoods,
   InvestmentCalulator,
@@ -12,4 +15,8 @@ export {
   quickquiz,
   sewebpage,
   Tohogame,
+
+  matt2,
+
+
 };

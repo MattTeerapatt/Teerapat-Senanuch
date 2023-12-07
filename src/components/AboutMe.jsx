@@ -2,7 +2,11 @@ import React from "react";
 import LineGradient from "./LineGradient";
 import useMediaQuery from "./UseMediaQuery";
 import { motion } from "framer-motion";
-import photo from "../assets/img/project-3.png";
+import { projectsData } from "../data";
+import photo from "../assets/img/matt2.png";
+
+
+
 
 const VerticalText = ({ text }) => (
   <div className="vertical-text text-xl z-50  font-playfair p-auto m-auto absolute h-full flex flex-col justify-center">
@@ -40,7 +44,8 @@ const AboutMe = () => {
             {/*photo */}
 
             <img
-              src={photo}
+              src= {photo}
+
               alt="Profile"
               className="w-full h-full object-cover"
             />

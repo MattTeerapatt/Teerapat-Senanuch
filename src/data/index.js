@@ -24,6 +24,7 @@ import {
   quickquiz,
   sewebpage,
   Tohogame,
+  matt2,
 } from "../assets/img"
 
 
@@ -61,6 +62,8 @@ export const projectsData = [
   { title: "quickquiz", image: quickquiz },
   { title: "sewebpage", image: sewebpage },
   { title: "Tohogame", image: Tohogame },
+  { title: "matt2", image: matt2 },
+
 ];
 
 
