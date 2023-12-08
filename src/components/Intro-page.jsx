@@ -76,7 +76,7 @@ const Landing = ({ setselectedPage }) => {
 
           <p className="text-1/2-xl font-playfair z-10 py-auto md:text-start text-light-black pb-5">
             A Software Engineering student at King Mongkut's Institute of
-            Technology Ladkrabang, which inspired me to become a 
+            Technology Ladkrabang, which hope to become a 
             <span className="font-bold text-1/3-xl"> full-stack developer</span> 
           </p>
         </motion.div>

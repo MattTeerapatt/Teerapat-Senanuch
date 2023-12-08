@@ -40,12 +40,11 @@ const AboutMe = () => {
             },
           }}
         >
-          <div className="relative border-4 md:top-56 overflow-hidden w-90 h-full mb-6 md:mb-0">
+          <div className="relative border-4 md:top-56 overflow-hidden w-90 h-full bg-red-500 mb-6 md:mb-0">
             {/*photo */}
 
             <img
               src= {photo}
-
               alt="Profile"
               className="w-full h-full object-cover"
             />
