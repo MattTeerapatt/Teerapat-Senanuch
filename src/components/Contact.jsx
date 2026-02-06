@@ -35,7 +35,7 @@ const Contact = () => {
           className="flex justify-between w-full"
         >
           <div>
-            <p className="font-playfair font-semibold text-4xl text-black">
+            <p className="font-playfair font-semibold text-4xl text-text-primary">
               CONTACT
             </p>
 
@@ -45,9 +45,9 @@ const Contact = () => {
           </div>
 
           <div className="hidden md:block">
-            <p className="font-playfair font-semibold text-4xl text-black">
+            <p className="font-playfair font-semibold text-4xl text-text-primary">
               GET STARTED{" "}
-              <span className="py-1 text-yellow-700"> CHAT WITH ME </span>
+              <span className="py-1 text-accent-gold"> CHAT WITH ME </span>
             </p>
             <div className="flex md:justify-end my-5">
               <LineGradient width="w-full" />
@@ -70,10 +70,10 @@ const Contact = () => {
           >
 
 <div className="text-left justify-start w-full">
-  <h4 className="font-playfair text-black mb-3 text-2xl underline underline-offset-4">
+  <h4 className="font-playfair text-text-primary mb-3 text-2xl underline underline-offset-4">
     Contact me
   </h4>
-  <ul className="list-none ml-0 md:ml-0 text-xl text-black">
+  <ul className="list-none ml-0 md:ml-0 text-xl text-text-secondary">
     <li className="mb-2 font-playfair">
       <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
       mmatt.trp@gmail.com
@@ -114,9 +114,9 @@ const Contact = () => {
               action="https://formsubmit.co/mmatt.trp@gmail.com"
               method="POST"
             >
-              <p className="font-playfair text-xl font-bold ">What's your email? *</p>
+              <p className="font-playfair text-xl font-bold text-text-primary">What's your email? *</p>
               <input
-                className="w-full bg-transparent text-deep-blue rounded-md font-semibold placeholder-opaque-black p-3 mt-2 border-b-2 border-stone-200 focus:outline-none transition duration-300 hover:border-yellow-500 hover-animation"
+                className="w-full bg-cream-base/60 backdrop-blur-sm text-text-primary rounded-md font-semibold placeholder-text-light p-3 mt-2 border-2 border-beige-soft focus:outline-none focus:border-accent-gold transition duration-300 hover:border-accent-gold shadow-elegant"
                 type="text"
                 placeholder="EMAIL"
                 {...register("email", {
@@ -133,10 +133,10 @@ const Contact = () => {
                 </p>
               )}
               {/* company */}
-              <p className="font-playfair text-xl pt-4 mb-0 pb-0 font-bold">What's your company? *</p>
+              <p className="font-playfair text-xl pt-4 mb-0 pb-0 font-bold text-text-primary">What's your company? *</p>
 
               <input
-                className="w-full bg-transparent text-deep-blue rounded-md font-semibold placeholder-opaque-black p-3 mt-2 border-b-2 border-stone-200 focus:outline-none transition duration-300 hover:border-yellow-500 hover-animation"
+                className="w-full bg-cream-base/60 backdrop-blur-sm text-text-primary rounded-md font-semibold placeholder-text-light p-3 mt-2 border-2 border-beige-soft focus:outline-none focus:border-accent-gold transition duration-300 hover:border-accent-gold shadow-elegant"
                 type="text"
                 placeholder="COMPANY"
                 {...register("company", {
@@ -153,11 +153,11 @@ const Contact = () => {
                 </p>
               )}
               {/* name */}
-              <p className="font-playfair text-xl pt-4 mb-0 pb-0 font-bold">What's your name? *</p>
+              <p className="font-playfair text-xl pt-4 mb-0 pb-0 font-bold text-text-primary">What's your name? *</p>
 
 
               <input
-                className="w-full bg-transparent text-deep-blue rounded-md font-semibold placeholder-opaque-black p-3 mt-2 border-b-2 border-stone-200 focus:outline-none transition duration-300 hover:border-yellow-500 hover-animation"
+                className="w-full bg-cream-base/60 backdrop-blur-sm text-text-primary rounded-md font-semibold placeholder-text-light p-3 mt-2 border-2 border-beige-soft focus:outline-none focus:border-accent-gold transition duration-300 hover:border-accent-gold shadow-elegant"
                 type="text"
                 placeholder="NAME"
                 {...register("name", {
@@ -176,11 +176,11 @@ const Contact = () => {
               {/* mail */}
 
               {/* detail */}
-              <p className="font-playfair text-xl pt-4 mb-0 pb-0 font-bold">Your message *</p>
+              <p className="font-playfair text-xl pt-4 mb-0 pb-0 font-bold text-text-primary">Your message *</p>
 
 
               <textarea
-                className="w-full bg-transparent text-deep-blue rounded-md font-semibold placeholder-opaque-black p-3 mt-2 border-b-2 border-stone-200 focus:outline-none transition duration-300 hover:border-yellow-500 hover-animation"
+                className="w-full bg-cream-base/60 backdrop-blur-sm text-text-primary rounded-md font-semibold placeholder-text-light p-3 mt-2 border-2 border-beige-soft focus:outline-none focus:border-accent-gold transition duration-300 hover:border-accent-gold shadow-elegant"
                 name="message"
                 placeholder="DETAILS"
                 rows="4"
@@ -200,9 +200,9 @@ const Contact = () => {
               )}
 
               <button
-                className="p-5 bg-yellow-500 font-semibold text-deep-blue 
-                mt-5 rounded-md hover:bg-red-500 hover:text-white transition duration-500 ml-auto
-                flex 
+                className="p-5 bg-accent-gold font-semibold text-white 
+                mt-5 rounded-md hover:bg-gold-accent transition duration-500 ml-auto
+                flex shadow-elegant
                 "
                 type="submit"
               >

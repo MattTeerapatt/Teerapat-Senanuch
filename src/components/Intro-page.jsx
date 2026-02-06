@@ -51,19 +51,19 @@ const Landing = ({ setselectedPage }) => {
             },
           }}
         >
-          <p className="text-1/2-xl font-Roboto z-10 text-start md:text-start md:text-xl text-black pb-5">
+          <p className="text-1/2-xl font-Roboto z-10 text-start md:text-start md:text-xl text-text-secondary pb-5">
             3rd Year Student in Software Engineering
           </p>
 
-          <p className="text-6xl md:text-9xl  font-poppins font-bold  z-10 md:text-start text-black md:pb-4 mb-2">
+          <p className="text-6xl md:text-9xl font-poppins font-bold z-10 md:text-start text-text-primary md:pb-4 mb-2">
             Teerapat <br className="md:hidden" />
-            <span className="relative md:justify-start pl-0 text-black font-poppins font-bold  z-20 before:content-brush before:absolute before:-left-[25px] before:-top-70px before:z-[-1]">
+            <span className="relative md:justify-start pl-0 font-poppins font-bold z-20 bg-gradient-to-r from-gold-accent via-accent-warm to-beige-medium bg-clip-text text-transparent before:content-brush before:absolute before:-left-[25px] before:-top-70px before:z-[-1]">
               Senanuch
             </span>
           </p>
 
           {/* <p className="mt-10 mb-7 text-center md:text-start text-whity justify-center text-lg font-playfair">
-            Hi, I’m Matt, a software engineer currently in my third year of
+            Hi, I'm Matt, a software engineer currently in my third year of
             studying software engineering at King Mongkut's Institute of
             Technology Ladkrabang. I am passionate about coding and building
             user-friendly, sturdy web applications. My expertise lies in
@@ -74,10 +74,10 @@ const Landing = ({ setselectedPage }) => {
             solutions
           </p> */}
 
-          <p className="text-1/2-xl font-playfair z-10 py-auto md:text-start text-light-black pb-5">
+          <p className="text-1/2-xl font-playfair z-10 py-auto md:text-start text-text-secondary pb-5">
             A Software Engineering student at King Mongkut's Institute of
             Technology Ladkrabang, which hope to become a 
-            <span className="font-bold text-1/3-xl"> full-stack developer</span> 
+            <span className="font-bold text-1/3-xl text-accent-gold"> full-stack developer</span> 
           </p>
         </motion.div>
 

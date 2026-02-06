@@ -5,7 +5,7 @@ import quickquiz from "./quickquiz.png";
 import sewebpage from "./sewebpage.png";
 import Tohogame from "./Tohogame.png";
 
-import matt2 from "./matt2.png"
+import matt2 from "./matt2.jpg"
 
 
 export {

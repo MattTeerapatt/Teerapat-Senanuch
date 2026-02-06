@@ -35,7 +35,7 @@ function App() {
   }, []); // Add an empty dependency array to run the effect only once on mount
 
   return (
-    <div className="app bg-stone-300">
+    <div className="app">
       <GitVertical />
       <Navbar
         isTopOfPage={isTopOfPage}
@@ -44,12 +44,6 @@ function App() {
       />
 
       <div className="w-5/6 mx-auto md:h-full">
-        {isAboveMediumScreens && (
-          <DotGroup
-            selectedPage={selectedPage}
-            setSelectedPage={setselectedPage}
-          />
-        )}
         <Intro setselectedPage={setselectedPage} />
       </div>
 

@@ -18,8 +18,8 @@ const projectVariant = {
 };
 
 const Project = ({ data, subtitle }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-1000
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-4 text-deep-blue rounded-md`;
+  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-95 transition duration-1000
+    bg-cream-light/90 backdrop-blur-sm z-30 flex flex-col justify-center items-center text-center p-4 text-text-primary rounded-md shadow-elegant`;
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -53,7 +53,7 @@ const Projects = () => {
       >
         <div className="p-4">
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-black">PROJECTS</span>
+            <span className="text-text-primary">PROJECTS</span>
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
@@ -61,11 +61,11 @@ const Projects = () => {
         </div>
 
         <div className="py-4">
-          <p className="mt-5 text-black ">
+          <p className="mt-5 text-text-secondary ">
             View more details on my{" "}
             <a
               href="https://github.com/MattTeerapatt"
-              className="text-sm md:text-base text-yellow-800 hover:scale-110 transition duration-1000 bold hover:text-orange-600"
+              className="text-sm md:text-base text-accent-gold hover:scale-110 transition duration-1000 bold hover:text-gold-accent"
             >
               Github
             </a>
@@ -84,11 +84,9 @@ const Projects = () => {
         >
           {/* ROW 1 */}
           <div
-            className="flex justify-center items-center p-4  rounded-md
-            text-3xl font-playfair font-semibold text-black transition duration-1000
-            
-            bg-gradient-to-r from-yellow-400 to-orange-300
-
+            className="flex justify-center items-center p-4 rounded-md
+            text-3xl font-playfair font-semibold text-text-primary transition duration-1000
+            bg-gradient-gold shadow-elegant
               "
           >
             React
@@ -105,11 +103,9 @@ const Projects = () => {
 
 
           <div
-            className="flex justify-center text-center items-center p-4 bg-blue
-            text-3xl text-hedvig-letter font-playfair font-semibold  text-black
-            rounded-md
-            bg-gradient-to-r from-yellow-400 to-orange-300
-
+            className="flex justify-center text-center items-center p-4
+            text-3xl font-playfair font-semibold text-text-primary
+            rounded-md bg-gradient-warm shadow-elegant
             "
           >
             User
@@ -124,10 +120,8 @@ const Projects = () => {
           {/* ROW 3 */}
           <div
             className="flex justify-center text-center items-center p-4 
-            text-3xl font-playfair font-semibold text-black
-            rounded-md
-            bg-gradient-to-r from-yellow-400 to-orange-300
-
+            text-3xl font-playfair font-semibold text-text-primary
+            rounded-md bg-gradient-elegant shadow-elegant
             "
           >
             Game

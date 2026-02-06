@@ -15,8 +15,8 @@ const Link = ({ page, selectedPage, setSelectedPage, closeMenu }) => {
   return (
     <AnchorLink
       className={`${
-        selectedPage === lowerCasePage ? "text-white underline underline-offset-8 rounded-md" : ""
-      } hover:text-yellow-500 transition duration-500 ease-in-out`}
+        selectedPage === lowerCasePage ? "text-accent-gold underline underline-offset-8 rounded-md" : ""
+      } hover:text-accent-gold transition duration-500 ease-in-out`}
       href={`#${lowerCasePage}`}
       onClick={handleClick}
     >
@@ -43,26 +43,27 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setActiveSection(entry.target.id);
+          setSelectedPage(entry.target.id); // Update selectedPage to sync with scroll
         }
       });
     };
 
     const observer = new IntersectionObserver(handleScroll, {
       root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
+      rootMargin: "-100px 0px -50% 0px", // Trigger when section is near top
+      threshold: 0,
     });
 
-    Object.values(sectionRefs).forEach(ref => {
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
+    // Observe actual sections in the DOM
+    const sections = document.querySelectorAll('section[id]');
+    sections.forEach(section => {
+      observer.observe(section);
     });
 
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [setSelectedPage]);
 
   const navbarBackground = activeSection === "home" ? "bg-transparent" : "bg-brown";
 
@@ -71,11 +72,11 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   };
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6 text-deep-blue bg-navbar-main`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6 backdrop-blur-md bg-cream-light/85 shadow-elegant border-b border-beige-soft/20`}>
       <div className="flex items-center justify-between mx-auto">
-        <h4 className="font-playfair text-2xl font-bold pl-4 ml-4 text-deep-blue">Software Engineering</h4>
+        <h4 className="font-playfair text-2xl font-bold pl-4 ml-4 text-text-primary">Software Engineering</h4>
         {isAboveMediumScreens ? (
-          <div className="flex justify-between gap-28 font-playfair pr-16 text-xl font-semibold">
+          <div className="flex justify-between gap-28 font-playfair pr-16 text-xl font-semibold text-text-primary">
             <Link
               page="Home"
               selectedPage={selectedPage}
@@ -108,7 +109,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             />
             <div>
               <a
-                className={`transition hover:scale-110 duration-500 hover:text-yellow-500`}
+                className={`transition hover:scale-110 duration-500 hover:text-accent-gold`}
                 href={`mailto:mmatt.trp@gmail.com`}
                 target="_blank"
                 rel="noreferrer"
@@ -119,7 +120,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
           </div>
         ) : (
           <button
-            className="rounded-full bg-yellow-500 p-2 mt-2 ml-auto justify-end"
+            className="rounded-full bg-accent-gold p-2 mt-2 ml-auto justify-end"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
             <img
