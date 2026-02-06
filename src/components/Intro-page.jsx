@@ -71,7 +71,7 @@ const Landing = ({ setselectedPage }) => {
             I've delved into and explored Back-End development. I'm continually
             working towards becoming a versatile Full Stack Developer, blending
             my skills in both Front End and Back End to create well-rounded
-            solutions
+            solutions`
           </p> */}
 
           <p className="text-1/2-xl font-playfair z-10 py-auto md:text-start text-text-secondary pb-5">

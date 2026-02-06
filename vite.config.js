@@ -6,4 +6,7 @@ export default defineConfig({
   base: '/Teerapat-Senanuch/',
   plugins: [react()],
   assetsInclude: ['**/*.mov', '**/*.mp4, **/*.png, **/*.jpg, **/*.jpeg, **/*.JPG , **/*.gif, **/*.svg'],
+  build: {
+    outDir: 'docs'
+  }
 })
